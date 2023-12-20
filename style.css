@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --color1: #001F3F;
+    --color2: #FFFFFF;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.wrapper {
+    max-width: 1512px;
+    margin: 0 auto;
+    padding: 0 5.88rem;
+}
+
+header {
+    background-color: var(--color2);
+    padding: 1.277rem 0;
+}
+
+header .desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav img {
+    width: 7.166rem;
+    height: 2.44rem;
+}
+
+header .desktop ul {
+    display: flex;
+    gap: 2.222rem;
+}
+
+header nav ul li a {
+    color: #8D8D8D;
+    font-family: Poppins;
+    font-size: 0.88rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: var(--color1);
+    font-weight: 600;
+}
+
+header .desktop .btns {
+    display: flex;
+    gap: 2.222rem;
+    align-items: center;
+}
+
+header nav .btns button {
+    padding: 0.555rem 1.9444rem;
+    font-family: Montserrat;
+    color: #FFFFFF;
+    font-size: 0.888rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.333rem;
+    border-radius: 4px;
+    border: 0;
+    background: #00A6FB;
+    box-shadow: 0px 0.11rem 1.666rem 0px rgba(0, 0, 0, 0.25);
+}
+
+header nav .btns i {
+    font-size: 1.2rem;
+    color: var(--color1);
+    cursor: pointer;
+}
+header .mobile{
+    display: none;
+}
+
+
+.hero {
+    height: 38.888rem;
+    width: 100%;
+    background-image: url("./images/Rectangle\ 9.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.hero .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+}
+
+.hero .wrapper h1 {
+    font-size: 2.888rem;
+    line-height: 3.2222rem;
+    margin-top: 4.3888rem;
+    width: 60%;
+}
+
+.hero .wrapper p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.611rem;
+    width: 60%;
+    margin-top: 1rem;
+}
+
+.hero .wrapper p span {
+    text-decoration: underline;
+}
+
+.hero .wrapper .container {
+    display: flex;
+    gap: 1.6666rem;
+    margin-top: 4.3888rem;
+}
+
+.hero .wrapper .container .card {
+    padding: 0.5555rem;
+    width: 16.3888rem;
+    background: var(--color2);
+    border-radius: 0px 0px 12px 12px;
+}
+
+.hero .wrapper .container .card h3 {
+    color: var(--color1);
+    font-size: 1.222rem;
+    font-weight: 600;
+    margin-top: 0.7222rem;
+}
+
+section.team {
+    background: var(--color2);
+    padding: 5.1111rem 0;
+}
+
+.teams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teams h1 {
+    color: var(--color1);
+    font-size: 2.8888rem;
+    font-weight: 700;
+    line-height: 3.2222rem;
+}
+
+.teams .container {
+    display: flex;
+    gap: 1.11rem;
+    justify-content: space-around;
+    margin-top: 1.777rem;
+}
+
+.teams .container .card {
+    border-radius: 18px;
+    border: 1px solid var(--color1);
+    background: var(--color2);
+    display: flex;
+    flex-direction: column;
+    padding: 1.111rem 1.3888rem;
+    width: 23.555rem;
+    height: 17.722rem;
+    position: relative;
+}
+
+.teams .container .card .profile {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.teams .container .card .profile img {
+    width: 3.222rem;
+    height: 3.222rem;
+}
+
+.teams .container .card .profile .right h3 {
+    color: var(--color1);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.teams .container .card .profile .right h4 {
+    color: #5F5F5F;
+    font-family: Roboto;
+    font-size: 0.888rem;
+    font-weight: 400;
+}
+
+.teams .container .card p {
+    color: #8D8D8D;
+    font-family: Roboto;
+    font-size: 0.888rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    margin-top: 1.166rem;
+}
+
+.teams .container .card .socials {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.teams .container .card .socials svg {
+    width: 1.833rem;
+    height: 1.833rem;
+    margin-right: 1rem;
+}
+
+.service {
+    padding: 4rem 0;
+    background: #BCD1E7;
+}
+
+.service .container {
+    display: flex;
+    align-items: center;
+
+}
+.service .container .left{
+    width: 50%;
+}
+.service .container .right{
+    width: 50%;
+}
+
+.service .container .left h2 {
+    color: #001F3F;
+    font-size: 2.888rem;
+    font-weight: 700;
+    line-height: 3.222rem;
+    width: 70%;
+}
+
+.service .container .left p {
+    color: #767676;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.611rem;
+    width: 75%;
+    margin-top: 1rem;
+}
+
+
+
+
+@media(max-width: 1440px) {
+    html {
+        font-size: 16px !important;
+    }
+
+}
+@media(max-width: 1340px) {
+    html {
+        font-size: 15px !important;
+    }
+
+}
+@media(max-width: 1240px) {
+    html {
+        font-size: 14px !important;
+    }
+
+}
+@media(max-width: 1140px) {
+    html {
+        font-size: 13px !important;
+    }
+
+}
+@media(max-width: 1040px) {
+    html {
+        font-size: 12px !important;
+    }
+
+}
+@media(max-width: 940px) {
+    html {
+        font-size: 11px !important;
+    }
+
+}
+@media(max-width: 840px) {
+    html {
+        font-size: 10px !important;
+    }
+
+}
+@media(max-width: 740px) {
+    html {
+        font-size: 9px !important;
+    }
+
+}
+@media(max-width: 640px) {
+    html {
+        font-size: 8px !important;
+    }
+
+}
+@media(max-width: 540px) {
+    html {
+        font-size: 9px !important;
+    }
+    .wrapper {
+        padding: 0 1.5rem;
+    }
+    header .desktop{
+        display: none;
+    }
+    header .mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav .btns{
+        display: flex;
+        gap: 1rem;
+    }
+    header nav .btns i {
+        font-size: 1.7rem;
+        color: var(--color1);
+    }
+
+    .hero .wrapper h1, .hero .wrapper p{
+        width: 100%;
+    }
+    .teams .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 4rem;
+    }
+    .teams .container .card{
+        width: 80%;
+        height: 14.722rem;
+    }
+    .service .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .service .container .left, .service .container .right{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .service .container .left h2 ,.service .container .left p{
+        width: 80%;
+    }
+}
